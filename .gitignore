@@ -1,0 +1,59 @@
+# ---- AMBIENTE VIRTUAL ----
+venv/
+env/
+.venv/
+.env/
+
+# ---- PYTHON CACHE ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- LOGS ----
+*.log
+logs/
+log.txt
+
+# ---- CONFIGURAÇÕES SENSÍVEIS ----
+*.env
+.env.*
+secrets.json
+config.json
+
+# ---- ARQUIVOS TEMPORÁRIOS / BUILD ----
+*.tmp
+*.temp
+*.swp
+*.bak
+*.DS_Store
+*.sqlite3
+*.db
+
+# ---- OUTPUTS DE APLICAÇÕES ----
+output/
+dist/
+build/
+
+# ---- ARQUIVOS DE IDEs ----
+# VSCode
+.vscode/
+# PyCharm / IntelliJ
+.idea/
+# Sublime
+*.sublime-workspace
+*.sublime-project
+
+# ---- NOTEBOOKS ----
+.ipynb_checkpoints/
+
+# ---- STREAMLIT ----
+.streamlit/credentials.toml
+.streamlit/secrets.toml
+
+# ---- GIT ----
+# Lembrar de ignorar arquivos de merge temporários
+*.orig
+
+# ---- WINDOWS ----
+Thumbs.db
+desktop.ini

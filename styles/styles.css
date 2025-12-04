@@ -1,0 +1,32 @@
+/* styles/styles.css */
+body {
+    background-color: #0f1115;
+    color: #e6eef8;
+}
+
+.card {
+    background: linear-gradient(180deg, #101316 0%, #111319 100%);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid #1e2933;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 8px;
+}
+
+.card-title {
+    color: #9fb1c8;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+.card-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    color: #f5f7fa;
+}
