@@ -100,15 +100,18 @@ def protocols_multi_by_type(df, tipo="CPF"):
             columns=["devedor_documento", "qtd_protocolos_unicos", "protocolos_unicos"]
         )
         return df_multi, 0
-    df_multi = pd.DataFrame(
-        {
-            "devedor_documento": selected.index,
-            "qtd_protocolos_unicos": selected.values,
-            "protocolos_unicos": prot_by_doc.loc[selected.index].apply(
-                lambda lst: ", ".join(lst)
-            ),
-        }
-    ).reset_index(drop=True)
+    df_multi = (
+        pd.DataFrame(
+            {
+                "devedor_documento": selected.index,
+                "qtd_protocolos_unicos": selected.values,
+                "protocolos_unicos": prot_by_doc.loc[selected.index].apply(
+                    lambda lst: ", ".join(lst)
+                ),
+            }
+        )
+        .reset_index(drop=True)       
+    )
     return df_multi, df_multi.shape[0]
 
 
